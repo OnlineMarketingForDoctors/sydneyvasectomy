@@ -16,11 +16,19 @@ Editorial redesign of sydneyvasectomy.au. Static build: `index.html` +
 
 | File | Source |
 |---|---|
-| `dr-geoff-*.jpg`, `dr-matt-*.jpg` | Client photography (Drive assets folder), optimized |
-| `dr-geoff-cutout.webp`, `dr-matt-cutout.webp` | Cutouts derived from client photography |
+| `dr-geoff-studio.jpg`, `dr-matt-studio.jpg` | Client photography, cut out and composited onto an identical sage studio plate so both portraits match |
+| `dr-geoff-dark.jpg`, `dr-matt-consult.jpg` | Client photography, optimized |
+| `hero-duo.webp` | **AI-generated** (nano banana pro, reference-based) — both doctors together, hero |
 | `duo-corridor.webp` | **AI-generated** (nano banana pro, reference-based) — both doctors in clinic corridor |
 | `consult.webp` | **AI-generated** (nano banana pro, reference-based) — Dr Cashion consulting |
-| `logo-mark.png`, `logo-white.png` | Client logo |
+| `clinic-bg.webp` | **AI-generated** (nano banana pro, text-only) — clinic interior, full-bleed closing background |
+| `video-poster.webp` | Frame extracted from the client's *How it works* video |
+| `logo.png`, `logo-mark.png` | Client logo (Drive) |
+
+## Video
+
+`assets/video/how-it-works.mp4` is **not committed** — see
+`assets/video/README.md`. `build.sh` fetches the web encode at deploy time.
 
 ## Local preview
 
