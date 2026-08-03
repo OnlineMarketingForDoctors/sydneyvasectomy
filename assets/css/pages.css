@@ -7,6 +7,10 @@
 .page-hero {
   position: relative;
   isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - var(--topbar-h));
+  min-height: calc(100svh - var(--topbar-h));
   background: var(--ink);
   color: var(--text-light);
   overflow: hidden;
@@ -27,6 +31,11 @@
   background: linear-gradient(96deg, rgba(19, 28, 51, 0.95) 0%, rgba(19, 28, 51, 0.86) 45%, rgba(19, 28, 51, 0.5) 78%, rgba(19, 28, 51, 0.3) 100%);
 }
 .page-hero-inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: clamp(3rem, 8vh, 5.5rem) var(--gutter) clamp(3rem, 7vh, 4.5rem);
@@ -634,4 +643,36 @@
 .map-frame {
   border: 1px solid rgba(71, 113, 109, 0.25);
   box-shadow: 0 24px 60px -34px rgba(19, 28, 51, 0.4);
+}
+
+/* ---------------- booking calendar ---------------- */
+.calendar-frame {
+  background: var(--paper);
+  border: 1px solid #e2e5da;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px -34px rgba(19, 28, 51, 0.4);
+}
+.calendar-frame iframe { display: block; width: 100%; border: 0; }
+
+.booking-help {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 1.8rem;
+  padding: 1.6rem 1.8rem;
+  background: var(--ink);
+  border-radius: 14px;
+  color: var(--text-light);
+}
+.booking-help h3 { color: var(--paper); font-size: 1.25rem; margin-bottom: 0.35rem; }
+.booking-help p { max-width: 34rem; font-size: 0.95rem; }
+.booking-help .btn-navy { background: var(--mint); color: var(--ink); }
+.booking-help .btn-navy:hover { background: #a6e0b6; }
+
+@media (max-width: 560px) {
+  .calendar-frame iframe { height: 480px; }
+  .booking-help { padding: 1.3rem; }
 }
