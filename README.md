@@ -22,8 +22,10 @@ Editorial redesign of sydneyvasectomy.au. Static build: `index.html` +
 | `duo-corridor.webp` | **AI-generated** (nano banana pro, reference-based) — both doctors in clinic corridor |
 | `consult.webp` | **AI-generated** (nano banana pro, reference-based) — Dr Cashion consulting |
 | `clinic-bg.webp` | **AI-generated** (nano banana pro, text-only) — clinic interior, full-bleed closing background |
-| `procedure-room.webp` | **AI-generated** — procedure room, Patient information hero |
-| `about-room.webp` | **AI-generated** — consulting room set for two, About hero |
+| `procedure-room.webp` | **AI-generated** — procedure room, Location closing background |
+| `patient-hero.webp` | **AI-generated** from the client's photo of Dr Cashion with a patient — Patient information hero |
+| `review-portrait.webp` | Client photograph, background regenerated to match the site's imaging style — homepage reviews |
+| `about-duo.webp` | **AI-generated** (nano banana pro, reference-based) — both doctors together, About hero |
 | `fees-counter.webp` | **AI-generated** — reception counter still life, Fees hero |
 | `book-diary.webp` | **AI-generated** — appointment diary, Book online hero |
 | `privacy-files.webp` | **AI-generated** — locked record drawers, Privacy policy hero |
