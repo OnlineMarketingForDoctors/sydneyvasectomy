@@ -573,6 +573,7 @@
 
 /* ---------------- booking steps ---------------- */
 .flow {
+  --flow-pad: clamp(1.25rem, 2.6vw, 2.4rem);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 0;
@@ -582,8 +583,14 @@
 .flow > li {
   counter-increment: flow;
   list-style: none;
-  padding: 1.8rem var(--gutter) 1.8rem 0;
+  padding: 1.8rem var(--flow-pad);
   border-right: 1px solid rgba(131, 177, 175, 0.3);
+}
+/* first column aligns with the heading; its right padding absorbs the missing
+   left padding so every column keeps the same measure */
+.flow > li:first-child {
+  padding-left: 0;
+  padding-right: calc(var(--flow-pad) * 2);
 }
 .flow > li:last-child { border-right: 0; }
 .flow > li::before {
@@ -614,7 +621,9 @@
 .papers .journal { font-size: 0.85rem; color: var(--teal); }
 
 @media (max-width: 900px) {
-  .flow > li { border-right: 0; border-bottom: 1px solid rgba(131, 177, 175, 0.3); padding-right: 0; }
+  .flow { grid-template-columns: 1fr; }
+  .flow > li,
+  .flow > li:first-child { border-right: 0; border-bottom: 1px solid rgba(131, 177, 175, 0.3); padding-right: 0; padding-left: 0; }
   .flow > li:last-child { border-bottom: 0; }
 }
 

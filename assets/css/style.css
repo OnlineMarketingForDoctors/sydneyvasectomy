@@ -371,10 +371,39 @@ mark {
 .profile + .profile { margin-top: clamp(3.5rem, 8vh, 6rem); }
 .profile-flip { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
 .profile-flip .profile-photo { order: 2; }
+.profile-photo { position: relative; }
 .profile-photo img {
   width: 100%;
   border-radius: 14px;
   box-shadow: 0 24px 60px -30px rgba(19, 28, 51, 0.45);
+}
+/* career tally, floated over the outer edge of each portrait */
+.photo-stat {
+  position: absolute;
+  bottom: clamp(1rem, 3vw, 1.9rem);
+  right: -1.25rem;
+  padding: 0.8rem 1.2rem;
+  background: var(--paper);
+  border-radius: 12px;
+  box-shadow: 0 18px 40px -18px rgba(19, 28, 51, 0.55);
+}
+.profile-flip .photo-stat { right: auto; left: -1.25rem; }
+.photo-stat strong {
+  display: block;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 1;
+  color: var(--ink);
+}
+.photo-stat span {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--teal-deep);
 }
 .profile-body h3 {
   font-size: clamp(1.9rem, 3.2vw, 2.7rem);
@@ -799,6 +828,8 @@ mark {
   .profile { grid-template-columns: 1fr; }
   .profile-flip .profile-photo { order: 0; }
   .profile-photo { max-width: 420px; }
+  .photo-stat,
+  .profile-flip .photo-stat { right: 0.9rem; left: auto; }
   .duo-band { grid-template-columns: 1fr; }
   .pricing { grid-template-columns: 1fr; }
   .steps { columns: 1; }
