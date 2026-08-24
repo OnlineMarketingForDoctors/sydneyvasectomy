@@ -10,7 +10,7 @@ Editorial redesign of sydneyvasectomy.au. Static build: `index.html` +
 - **Type** — Newsreader (editorial display serif) + Archivo (text/labels),
   self-hosted variable woff2 in `assets/fonts/`.
 - **Direction** — doctor-led branding: Dr Geoff Cashion and Dr Matt Valentine
-  front and centre, headline stat "32,000 vasectomies between them".
+  front and centre, headline stat "50,000 vasectomies between them".
 
 ## Image provenance
 
