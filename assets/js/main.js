@@ -131,3 +131,33 @@
     });
   });
 })();
+
+/* ---------------- back to top ---------------- */
+(function () {
+  var btn = document.querySelector('.to-top');
+  if (!btn) return;
+
+  // Hidden only once JS is running, so the link still works without scripting.
+  btn.classList.add('is-hidden');
+
+  var ticking = false;
+  function update() {
+    ticking = false;
+    var past = (window.pageYOffset || document.documentElement.scrollTop) > window.innerHeight * 0.6;
+    btn.classList.toggle('is-hidden', !past);
+  }
+  window.addEventListener('scroll', function () {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(update);
+  }, { passive: true });
+  update();
+
+  // Move focus to the top of the page, not just the scroll position.
+  btn.addEventListener('click', function () {
+    var top = document.getElementById('top');
+    if (!top) return;
+    top.setAttribute('tabindex', '-1');
+    top.focus({ preventScroll: true });
+  });
+})();
