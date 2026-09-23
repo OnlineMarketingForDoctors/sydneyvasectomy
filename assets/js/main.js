@@ -98,39 +98,6 @@
   });
 })();
 
-// Quote carousel — scroll-snap with dots.
-(function () {
-  document.querySelectorAll('.carousel').forEach(function (carousel) {
-    var track = carousel.querySelector('.carousel-track');
-    var dots = carousel.querySelector('.carousel-dots');
-    if (!track || !dots) return;
-    var slides = Array.prototype.slice.call(track.children);
-
-    slides.forEach(function (slide, i) {
-      var b = document.createElement('button');
-      b.type = 'button';
-      b.setAttribute('aria-label', 'Review ' + (i + 1) + ' of ' + slides.length);
-      if (i === 0) b.setAttribute('aria-current', 'true');
-      b.addEventListener('click', function () {
-        track.scrollTo({ left: slide.offsetLeft - track.offsetLeft, behavior: 'smooth' });
-      });
-      dots.appendChild(b);
-    });
-
-    var buttons = Array.prototype.slice.call(dots.children);
-    var tick;
-    track.addEventListener('scroll', function () {
-      clearTimeout(tick);
-      tick = setTimeout(function () {
-        var i = Math.round(track.scrollLeft / track.clientWidth);
-        buttons.forEach(function (b, n) {
-          if (n === i) b.setAttribute('aria-current', 'true');
-          else b.removeAttribute('aria-current');
-        });
-      }, 80);
-    });
-  });
-})();
 
 /* ---------------- back to top ---------------- */
 (function () {

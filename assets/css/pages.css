@@ -442,53 +442,6 @@
   margin-bottom: 1.6rem;
 }
 
-/* ---------------- quote carousel ---------------- */
-.carousel { position: relative; max-width: 900px; margin: 0 auto; }
-.carousel-track {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  gap: 0;
-}
-.carousel-track::-webkit-scrollbar { display: none; }
-.carousel-track > figure {
-  flex: 0 0 100%;
-  scroll-snap-align: center;
-  text-align: center;
-  padding: 0 1rem;
-}
-.carousel-track blockquote p {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: clamp(1.3rem, 2.6vw, 1.9rem);
-  line-height: 1.3;
-  color: var(--ink);
-}
-.band-ink .carousel-track blockquote p,
-.band-navy .carousel-track blockquote p { color: var(--paper); }
-.carousel-dots {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-top: 1.6rem;
-}
-.carousel-dots button {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  border: 0;
-  background: rgba(71, 113, 109, 0.3);
-  cursor: pointer;
-  padding: 0;
-}
-.carousel-dots button[aria-current="true"] { background: var(--teal-deep); width: 24px; border-radius: 999px; }
-.band-ink .carousel-dots button,
-.band-navy .carousel-dots button { background: rgba(198, 205, 221, 0.35); }
-.band-ink .carousel-dots button[aria-current="true"],
-.band-navy .carousel-dots button[aria-current="true"] { background: var(--mint); }
-.carousel-dots button:focus-visible { outline: 3px solid var(--mint); outline-offset: 3px; }
-
 /* ---------------- CTA strip ---------------- */
 .cta-strip {
   display: flex;
@@ -628,10 +581,6 @@
 }
 
 /* dark-band text corrections */
-.band-ink .rating-label,
-.band-navy .rating-label { color: var(--text-light); }
-.band-ink .google-cite,
-.band-navy .google-cite,
 .band-ink .fine,
 .band-navy .fine { color: var(--teal); }
 .band-ink .lede,
