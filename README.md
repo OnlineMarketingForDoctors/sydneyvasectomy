@@ -11,6 +11,10 @@ Editorial redesign of sydneyvasectomy.au. Static build: `index.html` +
   self-hosted variable woff2 in `assets/fonts/`.
 - **Direction** — doctor-led branding: Dr Geoff Cashion and Dr Matt Valentine
   front and centre, headline stat "50,000 vasectomies between them".
+- **AHPRA compliance** — no patient testimonials, reviews, star ratings or
+  review counts anywhere on the site. Testimonials about clinical care are
+  prohibited in advertising a regulated health service, so do not reintroduce
+  them. Practitioner registration numbers appear with each doctor's credentials.
 
 ## Image provenance
 
@@ -24,7 +28,7 @@ Editorial redesign of sydneyvasectomy.au. Static build: `index.html` +
 | `clinic-bg.webp` | **AI-generated** (nano banana pro, text-only) — clinic interior, full-bleed closing background |
 | `procedure-room.webp` | **AI-generated** — procedure room, Location closing background |
 | `patient-hero.webp` | **AI-generated** from the client's photo of Dr Cashion with a patient — Patient information hero |
-| `review-portrait.webp` | Client photograph, background regenerated to match the site's imaging style — homepage reviews |
+| `review-portrait.webp` | Client photograph, background regenerated to match the site's imaging style — **currently unplaced** (the reviews section it sat in was removed for AHPRA compliance) |
 | `about-duo.webp` | **AI-generated** (nano banana pro, reference-based) — both doctors together, About hero |
 | `fees-counter.webp` | **AI-generated** — reception counter still life, Fees hero |
 | `book-diary.webp` | **AI-generated** — appointment diary, Book online hero |

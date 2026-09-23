@@ -271,56 +271,6 @@ mark {
 .btn .icon { margin-right: 0.5rem; }
 .btn { display: inline-flex; align-items: center; justify-content: center; }
 
-/* Google mark — official four-colour G */
-.g-logo {
-  display: inline-block;
-  width: 0.95em;
-  height: 0.95em;
-  flex: none;
-  vertical-align: -0.14em;
-  background: center/contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%234285F4' d='M45.1 24.5c0-1.6-.1-2.7-.4-4H24v7.3h12.1c-.2 1.9-1.6 4.9-4.5 6.9l6.9 5.4c4.1-3.8 6.6-9.4 6.6-15.6z'/%3E%3Cpath fill='%2334A853' d='M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.9 1.3-4.4 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-7.1 5.5C8.1 41 15.4 46 24 46z'/%3E%3Cpath fill='%23FBBC05' d='M11.5 28.4c-.5-1.4-.7-2.9-.7-4.4s.3-3 .7-4.4l-7.1-5.5C2.9 17 2 20.4 2 24s.9 7 2.4 9.9l7.1-5.5z'/%3E%3Cpath fill='%23EA4335' d='M24 10.5c4.1 0 6.9 1.8 8.5 3.3l6.1-6C34.9 4.3 29.9 2 24 2 15.4 2 8.1 7 4.4 14.1l7.1 5.5c1.8-5.3 6.7-9.1 12.5-9.1z'/%3E%3C/svg%3E");
-}
-.g-logo-lg { width: 1.5rem; height: 1.5rem; }
-.google-cite {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-}
-
-/* ---------------- Google rating badge (hero) ---------------- */
-.g-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.7rem;
-  margin-top: 2rem;
-  padding: 0.7rem 1.4rem;
-  border: 1px solid rgba(198, 205, 221, 0.28);
-  border-radius: 999px;
-  background: rgba(250, 250, 246, 0.05);
-  text-decoration: none;
-  transition: border-color 0.2s ease, background 0.2s ease;
-}
-.g-badge:hover { border-color: var(--mint); background: rgba(147, 214, 166, 0.1); }
-.g-badge:focus-visible { outline: 3px solid var(--mint); outline-offset: 3px; }
-.g-badge strong {
-  font-size: 1.15rem;
-  font-weight: 650;
-  color: var(--paper);
-  line-height: 1;
-}
-.g-badge .stars svg { width: 1.05rem; height: 1.05rem; }
-.g-badge-label {
-  font-size: 0.92rem;
-  color: var(--text-light);
-  white-space: nowrap;
-}
-
-@media (max-width: 560px) {
-  .g-badge { gap: 0.5rem; padding: 0.6rem 1rem; }
-  .g-badge-label { font-size: 0.8rem; }
-  .g-badge .stars svg { width: 0.9rem; height: 0.9rem; }
-}
-
 /* ---------------- pillars ---------------- */
 .pillars {
   display: grid;
@@ -416,27 +366,6 @@ mark {
   margin-bottom: 1.2rem;
 }
 .profile-body > p + p { margin-top: 0.9rem; }
-.margin-quote {
-  margin-top: 1.6rem;
-  padding-left: 1.2rem;
-  border-left: 3px solid var(--mint);
-}
-.margin-quote p {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.12rem;
-  color: var(--ink);
-}
-.margin-quote cite {
-  display: block;
-  margin-top: 0.4rem;
-  font-style: normal;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--teal-deep);
-}
 
 /* ---------------- duo band + why choose ---------------- */
 .duo-band {
@@ -615,83 +544,13 @@ mark {
   color: #5a6272;
 }
 
-/* ---------------- reviews ---------------- */
-.reviews {
-  background: var(--sage);
-  padding: clamp(4rem, 9vh, 7rem) var(--gutter);
-  text-align: center;
-}
-.rating {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.7rem;
-  margin-bottom: 2rem;
-}
-.stars { display: inline-flex; gap: 0.15rem; }
-.stars svg {
-  width: 1.15rem;
-  height: 1.15rem;
-  fill: #f5b544;
-  stroke: none;
-}
-.rating-label {
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: #5a6272;
-}
-
-.big-quote {
-  max-width: 52rem;
-  margin: 0 auto 3rem;
-}
-.big-quote p {
-  font-family: var(--serif);
-  font-style: italic;
-  font-weight: 400;
-  font-size: clamp(1.5rem, 3.2vw, 2.4rem);
-  line-height: 1.25;
-  color: var(--ink);
-}
-.big-quote cite,
-.review-row cite {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  font-style: normal;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--teal-deep);
-}
-.review-row cite { justify-content: flex-start; }
-.margin-quote cite { display: inline-flex; }
-.review-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: clamp(1.5rem, 4vw, 3.5rem);
-  max-width: 1180px;
-  margin: 0 auto;
-  text-align: left;
-}
-.review-row blockquote {
-  border-top: 3px solid var(--mint);
-  padding-top: 1.1rem;
-}
-.review-row blockquote:nth-child(2) { border-color: var(--butter); }
-.review-row blockquote:nth-child(3) { border-color: var(--teal); }
-.review-row p {
-  font-family: var(--serif);
-  font-size: 1.15rem;
-  font-style: italic;
-  color: var(--ink);
-}
-.review-row cite { margin-top: 0.7rem; }
-
 /* ---------------- faq ---------------- */
 .faq {
+  /* full-bleed sage band while the grid keeps its max-width; restores the tonal
+     break that the removed reviews section used to provide */
+  background: var(--sage);
+  box-shadow: 0 0 0 100vmax var(--sage);
+  clip-path: inset(0 -100vmax);
   display: grid;
   grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
   gap: clamp(2.5rem, 6vw, 6rem);
@@ -700,6 +559,8 @@ mark {
   padding: clamp(4rem, 9vh, 7rem) var(--gutter);
   align-items: start;
 }
+/* on Fees the FAQ already follows a sage band — keep it on paper there */
+.band-sage + .faq { background: none; box-shadow: none; clip-path: none; }
 .faq-head { position: sticky; top: 6rem; }
 .faq-head h2 { margin-bottom: 1rem; }
 .faq-list details {
@@ -833,7 +694,6 @@ mark {
   .duo-band { grid-template-columns: 1fr; }
   .pricing { grid-template-columns: 1fr; }
   .steps { columns: 1; }
-  .review-row { grid-template-columns: 1fr; }
   .faq { grid-template-columns: 1fr; }
   .faq-head { position: static; }
   .closing::after {
@@ -848,7 +708,6 @@ mark {
   .topbar-actions .btn { padding: 0.55rem 1rem; font-size: 0.85rem; }
   .hero h1 { font-size: clamp(2.5rem, 11vw, 3.4rem); }
   .hero-stats strong { font-size: 1.5rem; }
-  .rating { flex-wrap: wrap; }
   .hero-portrait figcaption {
     left: 0.7rem;
     right: 0.7rem;
@@ -857,46 +716,6 @@ mark {
     letter-spacing: 0.1em;
     text-align: center;
   }
-}
-
-/* ---------------- reviews lead (photo + headline quote) ---------------- */
-.reviews-lead {
-  display: grid;
-  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-  gap: clamp(2rem, 5vw, 4.5rem);
-  align-items: center;
-  max-width: 1180px;
-  margin: 0 auto 3.5rem;
-  text-align: left;
-}
-.reviews-photo { position: relative; }
-.reviews-photo img {
-  width: 100%;
-  border-radius: 14px;
-  box-shadow: 0 26px 64px -32px rgba(19, 28, 51, 0.5);
-}
-.reviews-photo figcaption {
-  position: absolute;
-  left: 1rem;
-  right: 1rem;
-  bottom: 1rem;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  color: var(--paper);
-  background: rgba(19, 28, 51, 0.72);
-  backdrop-filter: blur(4px);
-  padding: 0.45rem 0.9rem;
-  border-radius: 999px;
-}
-.reviews-lead .eyebrow { margin-bottom: 0.9rem; }
-.reviews-lead .rating { justify-content: flex-start; margin-bottom: 1.6rem; }
-.reviews-lead .big-quote { max-width: none; margin: 0; }
-.reviews-lead .big-quote cite { justify-content: flex-start; }
-
-@media (max-width: 900px) {
-  .reviews-lead { grid-template-columns: 1fr; }
-  .reviews-photo { max-width: 420px; margin: 0 auto; }
 }
 
 /* ---------------- back to top ---------------- */
