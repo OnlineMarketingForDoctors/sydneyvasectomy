@@ -36,8 +36,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
+  /* full-bleed, matching the topbar and the .facts strip below */
   padding: clamp(3rem, 8vh, 5.5rem) var(--gutter) clamp(3rem, 7vh, 4.5rem);
 }
 .page-hero h1 {
