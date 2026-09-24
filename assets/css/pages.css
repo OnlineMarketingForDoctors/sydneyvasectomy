@@ -631,6 +631,7 @@
 .booking-help .btn-navy:hover { background: #a6e0b6; }
 
 @media (max-width: 560px) {
-  .calendar-frame iframe { height: 480px; }
+  /* booking flow needs more vertical room than the old month grid did */
+  .calendar-frame iframe { height: 760px; }
   .booking-help { padding: 1.3rem; }
 }
